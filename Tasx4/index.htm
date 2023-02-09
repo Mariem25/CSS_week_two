@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+*{
+box-sizing: border-box;
+margin: 0;
+}
+
+.layout{
+height: 100vh;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 7% 86% 7%;
+    grid-template-areas:
+        "head head head head head head head head head head"
+ "sec sec sec sec sec sec sec sec side side"
+  "fo fo fo fo fo fo fo fo fo fo";
+    color: white;
+}
+
+header{
+    grid-area: head;
+    background-color: #03a9f4;
+padding: 10px;
+}
+
+header::before{
+content: "Header";
+
+}
+
+section{
+
+    grid-area: sec;
+    background-color: #ff5722;
+padding: 10px;
+
+}
+
+section::before{
+content: "Section";
+}
+
+aside{
+grid-area: side;
+    background-color: #607d8b;
+padding: 10px;
+}
+
+aside::before{
+content: "Aside";
+}
+
+footer{
+grid-area: fo;
+    background-color: #009688;
+padding: 10px;
+}
+
+footer::before{
+content: "Footer";
+}
+
+</style>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+
+<body>
+<div class="layout">
+
+  <header></header>
+
+  <section></section>
+
+  <aside></aside>
+
+  <footer></footer>
+
+</div>
+</body>
+</html>

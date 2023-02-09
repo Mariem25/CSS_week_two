@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+*{
+box-sizing: border-box;
+}
+
+.grid {
+  background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+text-align:center;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto 1fr;
+gap :15px;
+font-size: larger;
+font-weight: bold;
+justofy-content: center;
+
+}
+
+.grid div{
+color: white;
+    background-color: #607d8b;
+    padding: 7px;
+position: relative;
+counter-increment: count;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid div::after{
+content: "Element " counter(count);
+}
+</style>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+
+<body>
+<div class="grid">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+</body>
+</html>

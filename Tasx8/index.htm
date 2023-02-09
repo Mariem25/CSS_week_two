@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+*{
+box-sizing: border-box;
+
+}
+
+.main{
+display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(4,auto);
+    padding: 20px;
+    gap: 10px;
+    //margin: 20px;
+    background-color: #eee;
+    transform: scale(0.7,0.7) translatey(-23%);
+}
+
+.main div{
+position: relative;
+padding: 10px;
+}
+
+.oneW,
+.twoW,
+.threeW,
+.fourW,
+.fiveW,
+.sixW,
+.sivenW{
+background-color: white;
+border-bottom: solid 3px #f9774d;
+}
+
+.oneB,
+.twoB,
+.threeB
+{
+background-color: black;
+color: white;
+border-bottom: solid 3px #f9774d;
+}
+
+.oneW{
+grid-area: 1/1/2/3;
+}
+
+.twoW{
+grid-area: 1/3/2/4;
+}
+
+.threeW{
+grid-area: 2/1/4/2;
+}
+
+.fourW{
+grid-area: 3/2/4/4;
+}
+
+.fiveW{
+grid-area: 4/1/5/2;
+}
+
+.sixW{
+grid-area: 4/3/5/4;
+}
+
+.sivenW{
+grid-area: 4/4/5/5;
+}
+
+.oneB{
+    grid-area: 1/4/4/5;
+}
+
+.twoB{
+grid-area: 2/2/3/4;
+
+}
+
+.threeB{
+grid-area: 4/2/5/3;
+}
+
+.name{
+font-weight: bold;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+.jop{
+color: #a8a8aa;
+    font-size: medium;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.first{
+font-weight: bold;
+}
+
+.ww::after,
+.bb::after{
+content: "''";
+    position: absolute;
+    right: 22px;
+    bottom: 0px;
+    transform: scale(4.3) rotate(11deg);
+    color: #b3b3b3;
+}
+
+}
+
+</style>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="oneW ww">
+<div class="name">Osama Mohamed</div>
+<div class="jop">Full-Stack Developer</div>
+<p class="p_one_white first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam id velit molestias itaque nihil sed
+                laudantium, et exercitationem cumque ab atque nobis perspiciatis? Eaque, aperiam delectus! Sed est natus
+                eos.</p>
+
+<p class="p_two_white">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Sed voluptatum asperiores dolorum voluptatibus illo
+                consequatur nobis deleniti voluptas atque
+                dolores esse suscipit
+                unde sunt, alias sint amet at quidem temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellat consequatur corporis rerum nihil culpa sunt? Delectus, recusandae impedit itaque consequuntur
+                fugiat deleniti a exercitationem blanditiis deserunt excepturi cumque aspernatur dicta?</p>
+</div>
+
+<div class="twoW ww">
+<div class="name">Ahmed Syed</div>
+<div class="jop">IOS Developer</div>
+<p class="p_one_white first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam id velit molestias itaque nihil sed
+                laudantium, et exercitationem cumque ab atque nobis perspiciatis? Eaque, aperiam delectus! Sed est natus
+                eos.</p>
+<p class="p_two_white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima incidunt a beatae porro tempora adipisci fugit provident sint repellat dignissimos repellendus
+                explicabo impedit neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptatum
+                asperiores dolorum voluptatibus illo consequatur nobis deleniti voluptas atque dolores esse suscipit</p>
+</div>
+
+<div class="oneB bb">
+<div class="name">Shady Nabil</div>
+<div class="jop">Full-Stack Developer</div>
+<p class="p_one_black first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam id velit molestias itaque nihil sed
+                laudantium, et exercitationem cumque ab atque nobis perspiciatis? Eaque, aperiam delectus! Sed est natus
+                eos.</p>
+<p class="p_two_black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minus iusto repellendus. Aperiam
+                expedita praesentium, doloribus reprehenderit laborum consectetur quos. Amet eveniet voluptatem
+                adipisci, voluptatum distinctio voluptatibus. Recusandae, facilis impedit! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Velit incidunt optio officia sit alias ipsum, ipsam magni explicabo
+                molestiae voluptates voluptatum sapiente dolorem dolore. Quasi quam veniam provident suscipit vero!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate perspiciatis possimus commodi
+                delectus modi, quod deleniti tempora inventore ipsum voluptas ullam maiores dicta? Aliquam architecto ut
+                magni corporis quod aperiam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptatum
+                asperiores dolorum voluptatibus illo consequatur nobis deleniti voluptas atque dolores esse suscipit
+                unde sunt, alias sint amet at quidem temporibus.</p>
+</div>
+
+
+<div class="threeW ww">
+<div class="name">Mohamed Ibrahim</div>
+<div class="jop">.Net Developer</div>
+<p class="p_one_white first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam id velit molestias itaque nihil sed
+                laudantium, et exercitationem cumque ab atque nobis perspiciatis? Eaque, aperiam delectus! Sed est natus
+                eos.</p>
+<p class="p_two_white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima incidunt a beatae porro tempora adipisci fugit provident sint repellat dignissimos repellendus
+                explicabo impedit neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptatum
+                asperiores dolorum voluptatibus illo consequatur nobis deleniti voluptas atque dolores esse suscipit
+                unde sunt, alias sint amet at quidem temporibus.</p>
+</div>
+
+
+<div class="twoB bb">
+<div class="name">Mahmoud Mohamed</div>
+<div class="jop">Full-Stack Developer</div>
+<p class="p_one_black first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam id velit molestias itaque nihil sed
+                laudantium, et exercitationem cumque ab atque nobis perspiciatis? Eaque, aperiam delectus! Sed est natus
+                eos.</p>
+<p class="p_two_black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima incidunt a beatae porro tempora adipisci fugit provident sint repellat dignissimos repellendus
+                explicabo impedit neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptatum
+                asperiores dolorum voluptatibus illo consequatur nobis deleniti voluptas atque dolores esse suscipit
+                unde sunt, alias sint amet at quidem temporibus.</p>
+</div>
+
+
+
+<div class="fourW ww">
+<div class="name">Ezz Eldin</div>
+<div class="jop">Front-End Developer</div>
+<p class="p_one_white first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam id velit molestias itaque nihil sed
+                laudantium, et exercitationem cumque ab atque nobis perspiciatis? Eaque, aperiam delectus! Sed est natus
+                eos.</p>
+<p class="p_two_white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima incidunt a beatae porro tempora adipisci fugit provident sint repellat dignissimos repellendus
+                explicabo impedit neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed voluptatum
+                asperiores dolorum voluptatibus illo consequatur nobis deleniti voluptas atque dolores esse suscipit
+                unde sunt, alias sint amet at quidem temporibus.</p>
+</div>
+
+
+<div class="fiveW ww">
+<div class="name">Mohamed Sayed</div>
+<div class="jop">IOS Developer</div>
+<p class="p_one_white first">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+<p class="p_two_white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima </p>
+</div>
+
+
+<div class="threeB bb">
+<div class="name">Ibrahim Sayed</div>
+<div class="jop">IOS Developer</div>
+<p class="p_one_black">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+<p class="p_two_black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima </p>
+</div>
+
+<div class="sixW ww">
+<div class="name">Gamal Sayed</div>
+<div class="jop">IOS Developer</div>
+<p class="p_one_white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima </p>
+</div>
+
+<div class="sivenW ww">
+<div class="name">Eman Sayed</div>
+<div class="jop">IOS Developer</div>
+<p class="p_one_white">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+<p class="p_two_white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, molestias tempore placeat error at
+                minima </p>
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>

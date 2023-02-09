@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+*{
+box-sizing: border-box;
+margin: 0;
+}
+
+body{
+display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 100vh;
+}
+
+div{
+   width: 200px;
+    height: 200px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    font-size: 33px;
+    font-weight: bold;
+    border-radius: 50%;
+    grid-area: 2/2/3/3;
+   
+}
+
+div::before{
+content: "";
+    background-color: #fff;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    z-index: -1;
+    border: solid 10px;
+    border-color: #e91e63 #e91e63 #e91e63 transparent;
+
+}
+
+div::after{
+content: "";
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: absolute;
+    z-index: -2;
+    border: solid 21px;
+    border-color: #2196f3 transparent #2196f3 #2196f3;
+
+}
+
+div:hover::after,
+div:hover::before{
+
+transform: rotate(360deg);
+}
+
+</style>
+<meta charset="UTF-8" />
+<title></title>
+</head>
+
+<body>
+
+<div>Elzero</div>
+
+</body>
+</html>
